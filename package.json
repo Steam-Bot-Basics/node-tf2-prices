@@ -1,6 +1,6 @@
 {
   "name": "tf2-prices",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Get prices of TF2 items",
   "main": "index.js",
   "scripts": {
