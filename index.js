@@ -50,6 +50,11 @@ Prices.prototype.startChecker = function() {
     this._currenciesChecker = setInterval(Prices.prototype.getCurrencies.bind(this), this.getCurrenciesTime);
 };
 
+Prices.prototype.stopChecker = function() {
+    clearInterval(this._priceChecker);
+    clearInterval(this._currenciesChecker);
+};
+
 require('./lib/http.js');
 require('./lib/webapi.js');
 require('./lib/requests.js');
